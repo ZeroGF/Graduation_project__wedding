@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>Wedding Dress</title>
+		<!-- Bootstrap -->
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<header class="contaier-fulid ">
+		      <!--加载头部-->
+		</header>
+		<!--内容-->
+		<div class="contaier-fulid main ">
+			<div class="header"></div>
+			<!--广告轮播大图-->
+			<div class="row">
+				
+				<div id="myCarousel" class="col-md-12  carousel slide">
+					
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/banner1.jpg" alt="First slide">
+						</div>
+						<div class="item">
+							<img src="images/banner2.jpg" alt="Second slide">
+						</div>
+						<div class="item">
+							<img src="images/banner3.jpg" alt="Third slide">
+						</div>
+						<div class="item">
+							<img src="images/banner4.jpg" alt="Four slide">
+						</div>
+						<div class="item">
+							<img src="images/banner5.jpg" alt="Five slide">
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left banner" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right banner" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		  <!--婚纱介绍-->
+		  <div class="row prod1">
+		  	<div class="col-md-12">
+		  		Specialising in luxurious & effortless wedding gowns, Grace Loves Lace delivers artfully crafted designs using the finest European laces & marvellously 
+		  	</div>
+		  	<div class="col-md-12">
+		  		imagined silhouettes to usher a new generation of bride. Designed & handmade in Australia and delivered worldwide. For the woman of style, 
+		  	</div>
+		  	<div class="col-md-12">
+           substance, passion – We Salute You.		  	
+		  	</div>
+		  	<div class="col-md-12  for">
+         For gown enquiries & personalised styling email stylist@graceloveslace.com.au		  	
+		  	</div>
+		  	<div class="col-md-2 col-md-offset-5">
+           <hr />		  	
+		  	</div>
+		  </div>
+		  <!--part2-->
+		  <div class="row prod2">
+		  	<div>
+		  		<h2>Grace Updates</h2>
+		  	</div>
+		  	<div class="row prod2-img">
+			  	<div class="col-md-4 prod2-img">
+			  		<img src="images/prod2-600x600.jpg"/>
+			  		<div class="prod2-info">
+			  			<p>THE GOLL BRIDE</p>
+			  			<h3>Jacab + Lorrana in the paloma</h3>
+			  			<h3>gown</h3>
+			  			<a href="/pc/html/list.html">READ MORE</a>
+			  		</div>
+			  	</div>
+			  	<div class="col-md-4">
+			  		<img src="images/prod22-600x600.jpg"/>
+			  		<div class="prod2-info">
+			  			<p>THE GOLL BRIDE</p>
+			  			<h3>Jacab + Lorrana in the paloma</h3>
+			  			<h3>gown</h3>
+			  			<a href="/pc/html/list.html">READ MORE</a>
+			  			
+			  		</div>
+			  	</div>
+			  	<div class="col-md-4">
+			  		<img src="images/prod23-600x600.jpg"/>
+			  		<div class="prod2-info">
+			  			<p>THE GOLL BRIDE</p>
+			  			<h3>Jacab + Lorrana in the paloma</h3>
+			  			<h3>gown</h3>
+			  			<a href="/pc/html/list.html">READ MORE</a>
+			  			
+			  		</div>
+			  	</div>
+		  	</div>
+		  </div>
+		  <!--products-->
+		  <div class="row products">
+		  	<h2 class="col-md-12">Fetured Products</h2>
+		  	<div class="col-md-1 guide prev ">
+		  		<img src="images/new-owl-left.svg"/>
+		  	</div>
+		  	<div class="col-md-10 product-slide">
+		  		<ul class="inner-slide">
+		  		
+		  	    </ul>
+		  	  <script type="text/html"  id="feture">
+		  	  	{{each products as prod}}
+		  	  	  <li>
+		  	  	  	<span class="pid" style="display: none;">{{prod.pid}}</span>
+		  	  	  	<span class="price" style="display: none;">{{prod.price}}</span>
+		  	  	  	<a href="/pc/html/list.html" target="_blank">
+		  	  	  		<img src="{{prod.img}}" alt="" /> 
+		  	  	  		<p class="prod-title">{{prod.title}}</p>
+		  	  	  	</a>
+		  	  	  </li>
+		
+		  	  	{{/each}}
+		  	  </script>
+		  	</div>
+		  	<div class="col-md-1 guide next">
+		  		<img src="images/new-owl-right.svg"/>
+		  	</div>
+		  
+		    <div class="col-md-12  keep">
+		    	<span>Keep Updated</span> <input type="text" placeholder="email address *"/><button class="send">Subscrible!</button>
+		    </div>
+		  </div>
+		  <!---->
+		</div>
+		<!--底部-->
+		<footer class="contaier-fulid footer">
+			<!--加载尾部-->
+		</footer>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="/pc/lib/jquery/jquery-3.3.1.min.js"></script>
+		<script src="/pc/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/pc/lib/requirejs/require.js" data-main="/pc/js/index"></script>
+		
+	</body>
+
+</html>
