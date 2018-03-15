@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #f6f5f5;
+}
+section{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: "times new roman";
+}
+ul li{
+	list-style: none;
+}
+
+.header{
+	width: 880px;
+	padding: 0 160px;
+	height: 55px;
+	background: #342d3b;
+	overflow: hidden;
+}
+.home-guide{
+	height: 55px;
+	line-height: 55px;
+	width:800px;
+	float: left;
+}
+.home-guide a{	
+	color: white;
+	font-size: 12px;
+	margin-left: 20px;
+}
+.home-line{
+	height: 55px;
+	line-height: 55px;
+	width:80px;
+	float: right;
+	text-align: right;
+}
+
+/*SIGN UP内容部分样式代码*/
+.content{
+	width: 1200px;
+	overflow: hidden;
+	background:url(../img/sign.jpg) no-repeat;
+}
+.sign{
+	width: 325px;
+	overflow: hidden;
+	margin: 0 auto;
+	
+}
+.sign-up{
+	height: 710px;
+}
+.sign-in{
+	height: 560px;
+}
+ form{
+	width: 285px;
+	overflow: hidden;
+	background: white;
+	margin-top: 40px;
+	padding: 40px 20px;
+}
+.form-up{
+	height: 520px;
+}
+.form-in{
+	height:420px ;
+}
+.title{
+	text-align: center;
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	
+}
+.title h1{
+	font-size: 25px;
+	color:#42394a;
+}
+.title h4{
+	font-size: 15px;
+	color:lightgrey;
+}
+.sign form p{
+	font-size: 15px;
+	color:#42394a;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.sign form p a{
+	font-size: 15px;
+	color:lightgrey;
+	padding-left: 20px;
+}
+.sign form p a:hover{
+	color:#42394a;
+}
+.sign .info input{
+	width: 265px;
+	padding: 0 10px;
+	height: 30px;
+	border: 1px solid lightgrey;
+}
+.submit{
+	width: 155px;
+	padding:10px ;
+	margin-top: 20px;
+	border-radius:5px ;
+	font-size: 20px;
+	background: #42394a;
+	color: white;
+	cursor: pointer;
+	border: none;
+	margin-left: 60px;
+}
+.submit:hover{
+	background: red;
+}
+.partner{
+	border-top: 1px solid lightgrey;
+	width: 245px;
+	height: 30px;
+	padding: 20px 25px;
+	margin-top: 30px;
+}
+.partner a{
+	margin-right: 10px;
+}
+

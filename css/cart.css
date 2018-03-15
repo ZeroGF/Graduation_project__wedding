@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+body {
+  background: url(../images/1prod/2_valeria-1067x1600.jpg) no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; }
+
+.main {
+  padding-bottom: 100px;
+  background: rgba(242, 231, 218, 0.7); }
+  .main .top {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center; }
+    .main .top a {
+      color: #b2712a; }
+    .main .top h1 {
+      color: #b2712a;
+      margin: 30px 0; }
+  .main .empty {
+    margin: 20px 0; }
+    .main .empty img {
+      width: 400px;
+      margin-left: 135px; }
+    .main .empty span {
+      font-size: 30px;
+      text-align: center;
+      margin: 30px; }
+  .main .prod-title {
+    border-bottom: 1px solid #E0D1C0;
+    padding-bottom: 50px;
+    padding: 20px 0;
+    text-align: center; }
+  .main .cart_wrap {
+    background: white;
+    padding: 50px 40px;
+    border: solid 5px #f9f2ed; }
+    .main .cart_wrap .cart-item {
+      height: 242px;
+      border-bottom: 1px solid #E0D1C0;
+      text-align: center;
+      padding: 20px 0; }
+      .main .cart_wrap .cart-item .select {
+        margin-top: 105px; }
+      .main .cart_wrap .cart-item .select {
+        width: 20px;
+        height: 20px; }
+        .main .cart_wrap .cart-item .select:checked {
+          appearance: none;
+          background-color: #b2712a; }
+      .main .cart_wrap .cart-item .del {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: #b2712a;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: 105px;
+        margin-left: 20px; }
+        .main .cart_wrap .cart-item .del:hover {
+          background: #D58C3D; }
+      .main .cart_wrap .cart-item .img-box, .main .cart_wrap .cart-item .img-box .img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden; }
+        .main .cart_wrap .cart-item .img-box .img {
+          height: auto; }
+      .main .cart_wrap .cart-item .amount-box span {
+        background: #b2712a;
+        display: inline-block;
+        color: white;
+        padding: 2px 0px;
+        width: 25px;
+        cursor: pointer; }
+      .main .cart_wrap .cart-item .name {
+        margin-top: 105px;
+        font-size: 14px;
+        color: #b2712a; }
+      .main .cart_wrap .cart-item .size {
+        font-size: 12px;
+        color: gray; }
+      .main .cart_wrap .cart-item .price-box {
+        margin-top: 105px; }
+      .main .cart_wrap .cart-item h3 {
+        margin-top: 95px;
+        color: #4d4c4c;
+        font-size: 14px;
+        line-height: 22px; }
+      .main .cart_wrap .cart-item .count {
+        border: solid 1px #E0D1C0;
+        width: 60px;
+        text-align: center; }
+    .main .cart_wrap .actions {
+      padding-top: 50px; }
+      .main .cart_wrap .actions .coupon input, .main .cart_wrap .actions .coupon a {
+        width: 200px;
+        border: 0;
+        outline: none;
+        background-color: #f9f2ed;
+        margin-right: 1px;
+        color: #f9f2ed;
+        height: 40px; }
+      .main .cart_wrap .actions .coupon a {
+        width: 100px;
+        color: #b2712a;
+        padding: 12px 20px;
+        text-decoration: none; }
+        .main .cart_wrap .actions .coupon a:hover {
+          color: orange; }
+      .main .cart_wrap .actions .update a {
+        width: 100px;
+        color: #b2712a;
+        padding: 12px 20px;
+        text-decoration: none;
+        background-color: #f9f2ed; }
+        .main .cart_wrap .actions .update a:hover {
+          color: orange; }
+    .main .cart_wrap .cart-totals .title h2 {
+      text-align: center;
+      color: #b2712a;
+      font-size: 30px; }
+    .main .cart_wrap .cart-totals .box-wrap .row {
+      border-bottom: 1px solid #E0D1C0; }
+      .main .cart_wrap .cart-totals .box-wrap .row div {
+        padding: 30px 0; }
+      .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping {
+        text-align: left;
+        padding: 0; }
+        .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping .info {
+          padding: 0;
+          display: none; }
+        .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping .zip {
+          margin-bottom: 10px; }
+        .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping .btn {
+          padding: 0;
+          width: 400px;
+          height: 40px !important;
+          line-height: 40px;
+          color: #b2712a;
+          border: 1px solid #b2712a;
+          background-color: #f9f2ed; }
+          .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping .btn .up {
+            margin-top: 10px !important; }
+        .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping select, .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping input, .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping .actions .coupon a, .main .cart_wrap .actions .coupon .cart-totals .box-wrap .row .shop-box .shopping a {
+          width: 400px;
+          height: 40px !important;
+          border: 1px solid #b2712a;
+          outline: none;
+          background-color: whitesmoke;
+          border: solid 1px #cfcfcf;
+          margin-top: 10px; }
+        .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping input, .main .cart_wrap .cart-totals .box-wrap .row .shop-box .shopping .actions .coupon a, .main .cart_wrap .actions .coupon .cart-totals .box-wrap .row .shop-box .shopping a {
+          padding-left: 5px;
+          color: #b2712a; }
+    .main .cart_wrap .checkout {
+      margin-top: 50px; }
+      .main .cart_wrap .checkout p {
+        background-color: #b2712a;
+        height: 40px;
+        max-width: 400px;
+        margin: auto;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer; }
+        .main .cart_wrap .checkout p:hover {
+          background-color: #D28B3F; }
+        .main .cart_wrap .checkout p a {
+          text-decoration: none;
+          color: white; }
+
+/*# sourceMappingURL=cart.css.map */
