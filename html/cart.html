@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>Wedding Dress</title>
+		<!-- Bootstrap -->
+		<link href="/pc/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../lib/jqueryui/jquery-ui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/pc/css/cart.css" />
+		<link rel="stylesheet" type="text/css" href="/pc/css/header-footer.css"/>
+	</head>
+	<body>
+		<header class="contaier-fulid header"></header>
+		<div class="main contaier-fulid">
+			<div class="row">
+				<div class="col-md-12 top">
+					<a href="../index.html">CONTINUE SHOPPING?</a><span>YOUR CART WAS UPDATED.</span>
+					<h1>YOUR CART</h1>
+				</div>
+			</div>
+			<div class="container cart_wrap">
+				<div class="row  prod-title">
+					<div class="col-md-1"><input type="checkbox" class="select_all" /><span>ALL</span></div>
+					<div class="col-md-1 col-md-offset-2">Product</div>
+					<div class="col-md-2">Price</div>
+					<div class="col-md-2">Quantity</div>
+					<div class="col-md-2">Total</div>
+					<div class="col-md-1">delete</div>
+				</div>
+				<!--动态加载数据-->
+				<div class="col-md-12 empty">
+					<img src="/pc/images/empty1.jpg"/>
+					<span>YOUR CART EMPTY!!!</span>
+				</div>
+				<div class="row actions">
+					<div class="col-md-5 coupon">
+						<input type="text" name="" value="" placeholder="Coupon Code"/>
+						<a href="#">Apply Coupon</a>
+					</div>
+					
+					<div class="col-md-2 col-md-offset-5 update">
+							<a href="#">Update Cart</a>
+					</div>
+				</div>
+			    <div class="row cart-totals">
+			    	    <div class="col-md-12 title"><h2>CART TOTAL</h2></div>
+			    	    <div class="contaier-fulid box-wrap">
+			    	        <div class="row">
+			    				<div class="col-md-5 col-md-offset-1">Subtotal</div>
+			    				<div class="col-md-5">$ <span class="total">0.00</span></div>
+			    			</div>
+			    			<div class="row">
+			    				<div class="col-md-5 col-md-offset-1">Shipping and Handling</div>
+			    				<div class="col-md-5 shop-box">
+			    					<p>Int Shipping: $ <span class="otherr">30.00</span></p>
+			    					<div class="shopping">
+			    						<div class="btn down">CALCULATE SHOPPING</div>
+			    						<div class="info">
+			    							<select id="province"></select><br />
+	                                        <select id="city"></select><br />
+	                                        <input type="text" class="zip" value="" placeholder="postCode/zip"/><br />
+	                                        <div class="btn up">UPDATES TOTALS</div>
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="row">
+			    				<div class="col-md-5 col-md-offset-1">Total</div>
+			    				<div class="col-md-5">
+			    				<strong>	$<span class="total-add">0.00</span></strong>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	<div class="col-md-12 checkout">
+			  
+			           <p><a  href="javascript:void(0)" target="_blank">PROCEED TO CHECKOUT</a></p>
+			    		
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<footer class="contaier-fulid footer"></footer>
+		
+	
+		<script src="../lib/requirejs/require.js" data-main="/pc/js/cart"></script>
+		
+	</body>
+</html>

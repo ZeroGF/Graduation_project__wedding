@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>Wedding Dress</title>
+		<!-- Bootstrap -->
+		<link href="/pc/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/pc/css/header-footer.css"/>
+		<link rel="stylesheet" type="text/css" href="/pc/css/list.css" />
+	</head>
+	<body>
+		
+		<header class="contaier-fulid header"></header>
+		<div class="main container-fluid">
+			
+			
+			<div class="row prod-list">
+				<!--添加假数据类容-->
+			</div>
+			
+			<script type="text/html" id="wedding">
+				<!--products：商品对象数组，prod：数组对象元素-->
+				{{each products as prod}}
+				        <div class="col-md-3 col- item">
+				        	<span class="pid" style="display: none;">{{prod.pid}}</span>
+							<a href="javascript:void(0)" target="_blank">
+							<img class="img img1" src="{{prod.img}}"/>
+							<img class="img img2" src="{{prod.img1}}"/>
+							<p><span class="title">{{prod.title}}</span>&nbsp;&nbsp;&nbsp;<span>$</span><span class="price">{{prod.price}}</span></p>
+							</a>
+						</div>
+		        {{/each}}
+			</script>
+		</div>
+		<footer class="contaier-fulid footer"></footer>
+		
+		
+		<script src="../lib/requirejs/require.js" data-main="/pc/js/lists"></script>
+	</body>
+</html>
