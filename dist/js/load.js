@@ -1,0 +1,1 @@
+"use strict";define(["jquery","cookie"],function(t){t.ajax({type:"get",url:"/pc/html/include/header.html",success:function(e){t(".header").html(e),t.getScript("/pc/js/header.js")}}),t.ajax({type:"get",url:"/pc/html/include/footer.html",success:function(e){t("footer").html(e),t.getScript("/pc/js/header.js")}})});
